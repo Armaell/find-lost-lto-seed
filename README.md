@@ -44,15 +44,17 @@ Install [Node.JS](https://nodejs.org/en/)
 
 At the top of this page, open the "Code" droplist and then "Download ZIP".
 
-Unzip
+### Prepare the tool
 
-### Run the tool
+Unzip the archive file.
 
-Open a console in the folder containing the tool. (On windows, type "cmd" in the file explorer search bar while being in the correct folder)
+Open a console in the folder containing the unzipped tool. (On windows, type "cmd" in the file explorer search bar while being in the correct folder)
 
-Type "npm start" end ENTER
+type `npm install`
 
 ### How to use
+
+In the previous console, type `npm start` end ENTER
 
 You will enter your seed phrase, then your public address
 

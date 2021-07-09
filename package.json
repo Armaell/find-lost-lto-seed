@@ -2,7 +2,9 @@
   "name": "find-lost-lto-seed",
   "version": "1.0.0",
   "description": "If you can't get your correct LTO wallet with your seed, you may have made a typo. This script will try to find it",
-  "keywords": ["LTO"],
+  "keywords": [
+    "LTO"
+  ],
   "main": "index.ts",
   "dependencies": {
     "@types/cli-progress": "^3.9.1",
@@ -10,7 +12,8 @@
     "cli-progress": "^3.9.0",
     "commander": "^7.2.0",
     "inquirer": "^8.0.0",
-    "lto-api": "^0.5.14"
+    "lto-api": "^0.5.14",
+    "typescript": "^4.3.5"
   },
   "devDependencies": {},
   "scripts": {
