@@ -12,7 +12,7 @@ If you import your seed in the [LTO wallet](https://wallet.lto.network) but end 
 
 ### Triple check what you typed
 
-Of course you could have made a mistake when typing it
+Of course you could have made a mistake when typing it. If you generated a bip39 compliant seed (meaning you generated one given you by default instead of writing a custom one), then you can check you with the [bip39 word list](bip39.txt) for typos in the words, or simply incorrect words.
 
 ### Disable Tidy seed
 
@@ -61,6 +61,11 @@ You will enter your seed phrase, then your public address
 Then you will be prompted to choose different kinds of scripts searching for different kind of typo
 
 ## Available scripts
+
+### Bip39
+If you used a bip39 seed, this will check if your seed phrase is correctly formatted. If an incorrect word is spotted, it will try replacements until the correct one is found.
+
+If more than one incorrect word is found, it will be probably faster to compare those words with the [bip39 word list](bip39.txt) by hand
 
 ### Typo
 This will try to find X typos in the seed by replacing X amount of characters with all combinations possible.

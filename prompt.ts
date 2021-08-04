@@ -1,7 +1,7 @@
 interface PromptAnswers {
     seed: string,
     address: string,
-    script: "Typo" | "Spacing" | 'Uppercases',
+    script: "Bip39" | "Typo" | "Spacing" | 'Uppercases',
     max_depth?: number
 }
 
@@ -20,6 +20,7 @@ const prompts = [
         "type": "list",
         "name": "script",
         "choices": [
+            "Bip39",
             "Typo",
             "Spacing",
             "Uppercases"

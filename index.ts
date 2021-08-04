@@ -2,6 +2,7 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 
 import { prompts, PromptAnswers } from './prompt';
+import { bip39 } from "./scripts/bip39";
 import { badSpacing } from "./scripts/spacing";
 import { findTypo } from "./scripts/typo";
 import { badUppercases } from './scripts/uppercase';
@@ -9,6 +10,9 @@ import { badUppercases } from './scripts/uppercase';
 inquirer.prompt(prompts).then(run)
 
 function run (anwsers: PromptAnswers) {
+    if (anwsers.script === "Bip39") {
+        promptResult(bip39(anwsers.seed, anwsers.address));
+    }
     if (anwsers.script === "Typo" && anwsers.max_depth) {
         promptResult(findTypo(anwsers.seed, anwsers.address, anwsers.max_depth));
     }
